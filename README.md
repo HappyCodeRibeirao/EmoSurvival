@@ -10,3 +10,7 @@ Open the cloned repository in unity.
 > Move  : w,a,s,d or arrow keys. <br>
 > Shoot : left mouse click. <br> 
 > Rotate: through mouse pointer. <br>
+
+### Tutorial :
+Unity has a tutorial to develop the original version of this game:
+https://unity3d.com/learn/tutorials/projects/survival-shooter-project
