@@ -1147,6 +1147,16 @@ Prefab:
       propertyPath: damageImage
       value: 
       objectReference: {fileID: 357311840}
+    - target: {fileID: 8298676, guid: aaeaae1194a2949b4bf153d7c5098f3e, type: 2}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24300000, guid: 8434b04884c414ac6b468e10945685e6,
+        type: 2}
+    - target: {fileID: 8271542, guid: aaeaae1194a2949b4bf153d7c5098f3e, type: 2}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24300004, guid: 8434b04884c414ac6b468e10945685e6,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aaeaae1194a2949b4bf153d7c5098f3e, type: 2}
   m_IsPrefabParent: 0
@@ -1244,7 +1254,8 @@ AudioSource:
   m_GameObject: {fileID: 1705523453}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300000, guid: 5b84db49d40ea449aa4f3e3bd229ab5b,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: 4fff99673a41e24439d527ad0bd6b569, type: 3}
   m_PlayOnAwake: 1
   m_Volume: .100000001
