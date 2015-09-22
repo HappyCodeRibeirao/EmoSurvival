@@ -51,8 +51,6 @@ public class PlayerMovement : MonoBehaviour
 
 	void Animating(float h, float v)
 	{
-		// TODO: walking seems pointless (remove unless we use it later)
-		bool walking = h != 0f || v != 0f;
-		anim.SetBool ("IsWalking", walking);
+		anim.SetBool ("IsWalking", h != 0f || v != 0f);
 	}
 }
