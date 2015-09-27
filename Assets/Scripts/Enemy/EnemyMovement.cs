@@ -19,13 +19,17 @@ public class EnemyMovement : MonoBehaviour
 
     void Update ()
     {
-        if(enemyHealth.currentHealth > 0 && playerHealth.currentHealth > 0)
-        {
-            nav.SetDestination (player.position);
-        }
-        else
-        {
-            nav.enabled = false;
-        }
+        if (enemyHealth.currentHealth <= 0)
+			nav.enabled = false;
+		else if (playerHealth.currentHealth <= 0)
+			nav.enabled = false;
+		else if (enemyHealth.currentHealth != enemyHealth.startingHealth) 
+			nav.SetDestination (player.position);
+		else 
+		{
+			float x = Random.Range (-34, 34);
+			float z = Random.Range (-34, 34);
+			nav.SetDestination (new Vector3 (x, 0f, z));
+		}
     }
 }
