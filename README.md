@@ -4,7 +4,7 @@ In your dreams of a dark night, you are haunted by fluffy toys who have become z
 
 ### Setup project in Unity :
 `git clone https://www.github.com/Affectiva/EmoSurvival.git` <br>
-Open the cloned repository in unity.  File -> Open Scenes -> Level 01 .
+Open the cloned repository in unity.  File -> Open Scenes -> Level 01 .  Import the Affdex asset from the Unity Asset store.
 
 > ####Controls :
 > Move  : w,a,s,d or arrow keys. <br>

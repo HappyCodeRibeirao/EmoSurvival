@@ -29,3 +29,17 @@ obj/
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# =============== #
+# Imported Assets #
+# =============== #
+Assets/UnityTestTools*
+Assets/affdex-data*
+Assets/Scenes/Test.unity*
+Assets/lib*
+Assets/web_*
+Assets/CameraMaterial*
+Assets/Editor*
+Assets/Listener*
+Assets/Plugins*
+Assets/ViewCam*
