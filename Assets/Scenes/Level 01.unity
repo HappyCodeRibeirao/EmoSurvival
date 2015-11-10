@@ -1013,6 +1013,8 @@ GameObject:
   - 124: {fileID: 1304515478}
   - 81: {fileID: 1304515477}
   - 114: {fileID: 1304515482}
+  - 114: {fileID: 1304515483}
+  - 114: {fileID: 1304515484}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1100,6 +1102,39 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 1305565591}
   smoothing: 5
+--- !u!114 &1304515483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1304515476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 2126965648, guid: fecde54766894c74baa82060cfbf420b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  license: '{"token":"4e560c0a02d46493ea74bdf5d8d9626597c7256d4ef4740f227e2d22cc9db73e","licensor":"Affectiva
+    Inc.","expires":"2015-12-20","developerId":"forest.handford@affectiva.com","software":"Affdex
+    SDK"}'
+  discrete: 0
+  emotions: -1
+  expressions: 0
+--- !u!114 &1304515484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1304515476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1326253449, guid: fecde54766894c74baa82060cfbf420b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sampleRate: 20
+  isFrontFacing: 1
+  targetWidth: 640
+  targetHeight: 480
+  webcamTexture: {fileID: 0}
 --- !u!1001 &1305565584
 Prefab:
   m_ObjectHideFlags: 0
