@@ -1132,8 +1132,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sampleRate: 20
   isFrontFacing: 1
-  targetWidth: 640
-  targetHeight: 480
+  targetWidth: 320
+  targetHeight: 240
   webcamTexture: {fileID: 0}
 --- !u!1001 &1305565584
 Prefab:
