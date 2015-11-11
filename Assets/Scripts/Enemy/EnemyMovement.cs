@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using System.Collections;
 
 public class EnemyMovement : MonoBehaviour
 {
@@ -23,6 +22,7 @@ public class EnemyMovement : MonoBehaviour
 			nav.enabled = false;
 		else if (playerHealth.currentHealth <= 0)
 			nav.enabled = false;
+        // TODO: Add emotion reactions
 		else if (enemyHealth.currentHealth != enemyHealth.startingHealth) 
 			nav.SetDestination (player.position);
 		else 
