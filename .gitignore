@@ -34,12 +34,13 @@ Thumbs.db
 # Imported Assets #
 # =============== #
 Assets/UnityTestTools*
-Assets/affdex-data*
+Assets/affdex*
 Assets/Scenes/Test.unity*
-Assets/lib*
-Assets/web_*
-Assets/CameraMaterial*
+Assets/Scenes/Integrati*
+Assets/Scenes/Video*
 Assets/Editor*
-Assets/Listener*
-Assets/Plugins*
+Assets/Stream*
+Assets/web_*
 Assets/ViewCam*
+Assets/Listener*
+Assets/Camera*
