@@ -1,12 +1,9 @@
 ﻿using UnityEngine;
 using Affdex;
 using System.Collections.Generic;
-using UnityEngine.UI;
 
 public class PlayerEmotions : AbstractAffdexListener
 {
-    //Text gamePausedText; 
-
     public override void onFaceFound(float timestamp, int faceId)
     {
         Debug.Log("Found the face");
