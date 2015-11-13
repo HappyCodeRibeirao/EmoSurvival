@@ -6,12 +6,14 @@ public class EnemyMovement : MonoBehaviour
     PlayerHealth playerHealth;
     EnemyHealth enemyHealth;
     NavMeshAgent nav;
+    PlayerEmotions playerEmotions;  
 
     void Awake ()
     {
         player = GameObject.FindGameObjectWithTag ("Player").transform;
         playerHealth = player.GetComponent <PlayerHealth> ();
         enemyHealth = GetComponent <EnemyHealth> ();
+        playerEmotions = player.GetComponent<PlayerEmotions> ();
         nav = GetComponent <NavMeshAgent> ();
     }
 
@@ -19,17 +21,25 @@ public class EnemyMovement : MonoBehaviour
     void Update ()
     {
         if (enemyHealth.currentHealth <= 0)
-			nav.enabled = false;
-		else if (playerHealth.currentHealth <= 0)
-			nav.enabled = false;
-        // TODO: Add emotion reactions
-		else if (enemyHealth.currentHealth != enemyHealth.startingHealth) 
-			nav.SetDestination (player.position);
-		else 
-		{
-			float x = Random.Range (-34, 34);
-			float z = Random.Range (-34, 34);
-			nav.SetDestination (new Vector3 (x, 0f, z));
-		}
+            nav.enabled = false;
+        else if (playerHealth.currentHealth <= 0)
+            nav.enabled = false;
+        else if (enemyHealth.currentHealth != enemyHealth.startingHealth)
+            nav.SetDestination(player.position);
+        else if (playerEmotions != null && playerEmotions.currentValence > 80)
+        {
+            Debug.Log("Go away!");
+            nav.SetDestination(new Vector3(-10f, 0f, 21f));
+        }
+        else if (playerEmotions != null && playerEmotions.currentContempt > 20)
+            nav.SetDestination(player.position);
+        else if (playerEmotions != null && playerEmotions.currentDisgust > 20)
+            nav.SetDestination(player.position);
+        else
+        {
+            float x = Random.Range(-34, 34);
+            float z = Random.Range(-34, 34);
+            nav.SetDestination(new Vector3(x, 0f, z));
+        }
     }
 }

@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-using System.Collections;
+using Affdex;
 
 namespace CompleteProject
 {
@@ -15,8 +15,7 @@ namespace CompleteProject
         EnemyHealth enemyHealth;                    // Reference to this enemy's health.
         bool playerInRange;                         // Whether player is within the trigger collider and can be attacked.
         float timer;                                // Timer for counting up to the next attack.
-
-
+        
         void Awake ()
         {
             // Setting up the references.
@@ -76,7 +75,7 @@ namespace CompleteProject
             timer = 0f;
 
             // If the player has health to lose...
-            if(playerHealth.currentHealth > 0)
+            if (playerHealth.currentHealth > 0)
             {
                 // ... damage the player.
                 playerHealth.TakeDamage (attackDamage);

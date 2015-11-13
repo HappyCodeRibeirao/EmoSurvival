@@ -1118,7 +1118,7 @@ MonoBehaviour:
     Inc.","expires":"2015-12-20","developerId":"forest.handford@affectiva.com","software":"Affdex
     SDK"}'
   discrete: 0
-  emotions: -1
+  emotions: -290
   expressions: 0
 --- !u!114 &1304515484
 MonoBehaviour:
@@ -1135,7 +1135,6 @@ MonoBehaviour:
   isFrontFacing: 1
   targetWidth: 320
   targetHeight: 240
-  webcamTexture: {fileID: 0}
 --- !u!1001 &1305565584
 Prefab:
   m_ObjectHideFlags: 0
@@ -1452,21 +1451,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1750661493}
---- !u!1 &1758402759 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 104996, guid: aaeaae1194a2949b4bf153d7c5098f3e, type: 2}
-  m_PrefabInternal: {fileID: 1305565584}
---- !u!114 &1758402760
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1758402759}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b79dbfcea0863440b00ef35f105f986, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1789779919
 GameObject:
   m_ObjectHideFlags: 0
@@ -1616,6 +1600,24 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
+--- !u!1 &1906455534 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 131326, guid: aaeaae1194a2949b4bf153d7c5098f3e, type: 2}
+  m_PrefabInternal: {fileID: 1305565584}
+--- !u!114 &1906455535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1906455534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b79dbfcea0863440b00ef35f105f986, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentDisgust: 0
+  currentContempt: 0
+  currentValence: 0
 --- !u!1 &1962912650
 GameObject:
   m_ObjectHideFlags: 0
