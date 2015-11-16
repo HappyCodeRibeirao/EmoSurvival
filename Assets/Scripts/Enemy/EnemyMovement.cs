@@ -27,10 +27,7 @@ public class EnemyMovement : MonoBehaviour
         else if (enemyHealth.currentHealth != enemyHealth.startingHealth)
             nav.SetDestination(player.position);
         else if (playerEmotions != null && playerEmotions.currentValence > 80)
-        {
-            Debug.Log("Go away!");
             nav.SetDestination(new Vector3(-10f, 0f, 21f));
-        }
         else if (playerEmotions != null && playerEmotions.currentContempt > 20)
             nav.SetDestination(player.position);
         else if (playerEmotions != null && playerEmotions.currentDisgust > 20)
