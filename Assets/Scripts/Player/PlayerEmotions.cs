@@ -8,6 +8,7 @@ public class PlayerEmotions : AbstractAffdexListener
     public float currentContempt;
     public float currentValence;
     public float currentAnger;
+    public float currentFear;
 
     public override void onFaceFound(float timestamp, int faceId)
     {
@@ -27,6 +28,7 @@ public class PlayerEmotions : AbstractAffdexListener
             faces[0].Emotions.TryGetValue(Emotions.Contempt, out currentContempt);
             faces[0].Emotions.TryGetValue(Emotions.Valence, out currentValence);
             faces[0].Emotions.TryGetValue(Emotions.Anger, out currentAnger);
+            faces[0].Emotions.TryGetValue(Emotions.Fear, out currentFear);
         }
     }
 }
