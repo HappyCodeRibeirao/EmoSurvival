@@ -30,6 +30,8 @@ public class EnemyMovement : MonoBehaviour
             nav.SetDestination(new Vector3(-10f, 0f, 21f));
         else if (playerEmotions != null && playerEmotions.currentContempt > 20)
             nav.SetDestination(player.position);
+        else if (playerEmotions != null && playerEmotions.currentAnger > 20)
+            nav.SetDestination(player.position);
         else if (playerEmotions != null && playerEmotions.currentDisgust > 20)
             nav.SetDestination(player.position);
         else

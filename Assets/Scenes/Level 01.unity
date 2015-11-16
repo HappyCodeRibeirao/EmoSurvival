@@ -1118,7 +1118,7 @@ MonoBehaviour:
     Inc.","expires":"2015-12-20","developerId":"forest.handford@affectiva.com","software":"Affdex
     SDK"}'
   discrete: 0
-  emotions: -290
+  emotions: -298
   expressions: 0
 --- !u!114 &1304515484
 MonoBehaviour:
@@ -1131,7 +1131,7 @@ MonoBehaviour:
   m_Script: {fileID: 1326253449, guid: fecde54766894c74baa82060cfbf420b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sampleRate: 20
+  sampleRate: 5
   isFrontFacing: 1
   targetWidth: 320
   targetHeight: 240
@@ -1618,6 +1618,7 @@ MonoBehaviour:
   currentDisgust: 0
   currentContempt: 0
   currentValence: 0
+  currentAnger: 0
 --- !u!1 &1962912650
 GameObject:
   m_ObjectHideFlags: 0
