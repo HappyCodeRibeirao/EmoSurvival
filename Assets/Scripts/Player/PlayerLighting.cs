@@ -2,9 +2,9 @@
 
 public class PlayerLighting : MonoBehaviour {
     Transform player;
-#pragma warning disable CS0108 // Member hides inherited member; missing new keyword
+#pragma warning disable 108 // Member hides inherited member; missing new keyword
     public Light light;
-#pragma warning restore CS0108 // Member hides inherited member; missing new keyword
+#pragma warning restore 108 // Member hides inherited member; missing new keyword
 
     PlayerEmotions playerEmotions;
 
