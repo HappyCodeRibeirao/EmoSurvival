@@ -10,6 +10,8 @@ public class PlayerEmotions : AbstractAffdexListener
     public float currentAnger;
     public float currentFear;
 
+    PlayerHealth playerHealth;
+
     public override void onFaceFound(float timestamp, int faceId)
     {
         Debug.Log("Found the face");
@@ -17,8 +19,14 @@ public class PlayerEmotions : AbstractAffdexListener
 
     public override void onFaceLost(float timestamp, int faceId)
     {
-        Time.timeScale = 0;
-     }
+        Transform player;
+        player = GameObject.FindGameObjectWithTag("Player").transform;
+        playerHealth = player.GetComponent<PlayerHealth>();
+        if (playerHealth.currentHealth > 0)
+        {
+            Time.timeScale = 0;
+        }
+    }
 
     public override void onImageResults(Dictionary<int, Face> faces)
     {
