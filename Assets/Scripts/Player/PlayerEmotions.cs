@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using Affdex;
 using System.Collections.Generic;
 
@@ -10,18 +11,22 @@ public class PlayerEmotions : AbstractAffdexListener
     public float currentAnger;
     public float currentFear;
 
-    PlayerHealth playerHealth;
+    Transform playerIcon;
+    Image playerIconImage;
 
     public override void onFaceFound(float timestamp, int faceId)
     {
+        setIcon(255);
         Debug.Log("Found the face");
     }
 
     public override void onFaceLost(float timestamp, int faceId)
     {
+        setIcon(20);
+        Debug.Log("Lost the face");
         Transform player;
         player = GameObject.FindGameObjectWithTag("Player").transform;
-        playerHealth = player.GetComponent<PlayerHealth>();
+        PlayerHealth playerHealth = player.GetComponent<PlayerHealth>();
         if (playerHealth.currentHealth > 0)
         {
             Time.timeScale = 0;
@@ -38,5 +43,12 @@ public class PlayerEmotions : AbstractAffdexListener
             faces[0].Emotions.TryGetValue(Emotions.Anger, out currentAnger);
             faces[0].Emotions.TryGetValue(Emotions.Fear, out currentFear);
         }
+    }
+
+    private void setIcon(byte alpha)
+    {
+        playerIcon = GameObject.FindGameObjectWithTag("PlayerIcon").transform;
+        playerIconImage = playerIcon.GetComponent<Image>();
+        playerIconImage.color = new Color32(255, 255, 255, alpha);
     }
 }

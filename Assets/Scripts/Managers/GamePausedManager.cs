@@ -17,8 +17,8 @@ namespace CompleteProject
         void Update()
         {
             // If Paused show the Pause Text!
-            if (Time.timeScale == 0) text.color = new Color(255, 255, 255, 255);
-            else text.color = new Color(255, 255, 255, 0);
+            if (Time.timeScale == 0) text.color = new Color32(168, 51, 174, 255);
+            else text.color = new Color32(168, 51, 174, 0);
         }
     }
 }
