@@ -10,7 +10,12 @@ Open the cloned repository in unity.  File -> Open Scenes -> Level 01 .  Import 
 > Move  : w,a,s,d or arrow keys. <br>
 > Shoot : left mouse click. <br> 
 > Rotate: through mouse pointer. <br>
+> Pause : cover or turn away from camera. <br>
 
 ### Tutorial :
 Unity has a tutorial to develop the original version of this game:
 https://unity3d.com/learn/tutorials/projects/survival-shooter-project
+
+### Affdex Unity Asset Documentation :
+Instructions on how to emotion enable a game (with examples from EmoSurvival) is here:
+http://developer.affectiva.com/unity/
