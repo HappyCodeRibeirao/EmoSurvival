@@ -18,6 +18,6 @@ public class PlayerLighting : MonoBehaviour {
 	void Update ()
     {
         if (playerEmotions != null)
-            light.range = playerEmotions.currentValence;
+            light.range = playerEmotions.currentFear;
     }
 }

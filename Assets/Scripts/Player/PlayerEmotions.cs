@@ -5,6 +5,7 @@ using System.Collections.Generic;
 
 public class PlayerEmotions : AbstractAffdexListener
 {
+    public Slider zenSlider;
     public float currentDisgust;
     public float currentContempt;
     public float currentValence;
@@ -42,6 +43,9 @@ public class PlayerEmotions : AbstractAffdexListener
             faces[0].Emotions.TryGetValue(Emotions.Valence, out currentValence);
             faces[0].Emotions.TryGetValue(Emotions.Anger, out currentAnger);
             faces[0].Emotions.TryGetValue(Emotions.Fear, out currentFear);
+            
+            if (currentValence >= 0) zenSlider.value = currentValence;
+            else zenSlider.value = 0;
         }
     }
 
