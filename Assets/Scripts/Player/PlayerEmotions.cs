@@ -17,13 +17,13 @@ public class PlayerEmotions : AbstractAffdexListener
     public override void onFaceFound(float timestamp, int faceId)
     {
         setIcon(255);
-        Debug.Log("Found the face");
+        if (Debug.isDebugBuild) Debug.Log("Found the face");
     }
 
     public override void onFaceLost(float timestamp, int faceId)
     {
         setIcon(20);
-        Debug.Log("Lost the face");
+        if (Debug.isDebugBuild) Debug.Log("Lost the face");
         Transform player;
         player = GameObject.FindGameObjectWithTag("Player").transform;
         PlayerHealth playerHealth = player.GetComponent<PlayerHealth>();

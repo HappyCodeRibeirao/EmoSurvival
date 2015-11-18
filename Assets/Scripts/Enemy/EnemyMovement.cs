@@ -30,7 +30,7 @@ public class EnemyMovement : MonoBehaviour
             nav.SetDestination(player.position);
             isAttacking = true;
         }
-        else if (playerEmotions != null && playerEmotions.currentValence > 80)
+        else if (zenState(playerEmotions))
             nav.SetDestination(new Vector3(-10f, 0f, 21f));
         else if (isAttacking)
             nav.SetDestination(player.position);
@@ -55,5 +55,17 @@ public class EnemyMovement : MonoBehaviour
             float z = Random.Range(-34, 34);
             nav.SetDestination(new Vector3(x, 0f, z));
         }
+    }
+
+    private bool zenState(PlayerEmotions playerEmotions)
+    {
+        if (playerEmotions == null)
+            return false;
+        else if (playerEmotions.currentValence > 80)
+            return true;
+        // Make it easy on QA to enter zen state!
+        else if (Debug.isDebugBuild && playerEmotions.currentValence > 40)
+            return true;
+        else return false;
     }
 }
