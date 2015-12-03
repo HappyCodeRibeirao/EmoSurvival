@@ -29,31 +29,31 @@ public class HellephantMovement : MonoBehaviour
             nav.enabled = false;
         else if (playerHealth.currentHealth <= 0)
             nav.enabled = false;
-        else if (playerEmotions != null && playerEmotions.currentFear > 5)
+        else if (isAttacking)
+            nav.SetDestination(player.position);
+        else if (playerEmotions != null && playerEmotions.currentSurprise > 20)
         {
             nav.SetDestination(player.position);
             isAttacking = true;
             enemyAudio.clip = smellsFearClip;
             enemyAudio.Play();
         }
-        else if (isAttacking)
-            nav.SetDestination(player.position);
         else if (enemyHealth.currentHealth != enemyHealth.startingHealth)
         {
             isAttacking = true;
             nav.SetDestination(player.position);
         }
-        else if (playerEmotions != null && playerEmotions.currentContempt > 20)
+        else if (playerEmotions != null && playerEmotions.currentContempt > 30)
         {
             nav.SetDestination(player.position);
             isAttacking = true;
         }
-        else if (playerEmotions != null && playerEmotions.currentAnger > 20)
+        else if (playerEmotions != null && playerEmotions.currentAnger > 30)
         {
             nav.SetDestination(player.position);
             isAttacking = true;
         }
-        else if (playerEmotions != null && playerEmotions.currentDisgust > 20)
+        else if (playerEmotions != null && playerEmotions.currentDisgust > 30)
         {
             nav.SetDestination(player.position);
             isAttacking = true;

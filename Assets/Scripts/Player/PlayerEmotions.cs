@@ -10,7 +10,7 @@ public class PlayerEmotions : AbstractAffdexListener
     public float currentContempt;
     public float currentValence;
     public float currentAnger;
-    public float currentFear;
+    public float currentSurprise;
 
     Transform playerIcon;
     Image playerIconImage;
@@ -42,8 +42,8 @@ public class PlayerEmotions : AbstractAffdexListener
             faces[0].Emotions.TryGetValue(Emotions.Contempt, out currentContempt);
             faces[0].Emotions.TryGetValue(Emotions.Valence, out currentValence);
             faces[0].Emotions.TryGetValue(Emotions.Anger, out currentAnger);
-            faces[0].Emotions.TryGetValue(Emotions.Fear, out currentFear);
-            
+            faces[0].Emotions.TryGetValue(Emotions.Surprise, out currentSurprise);
+
             if (currentValence >= 0) zenSlider.value = currentValence;
             else zenSlider.value = 0;
         }
