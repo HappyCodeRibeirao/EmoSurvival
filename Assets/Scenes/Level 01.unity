@@ -1295,7 +1295,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1304515476}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 2126965648, guid: fecde54766894c74baa82060cfbf420b, type: 3}
+  m_Script: {fileID: 11500000, guid: c9db04d0f9cdf0c45bab39f4268dc6d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   startOnWake: 1
@@ -1313,7 +1313,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1304515476}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1326253449, guid: fecde54766894c74baa82060cfbf420b, type: 3}
+  m_Script: {fileID: 11500000, guid: b58a41d2cccbef14fbba41225e469907, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   sampleRate: 5

@@ -3,7 +3,7 @@ using UnityEngine.UI;
 using Affdex;
 using System.Collections.Generic;
 
-public class PlayerEmotions : AbstractAffdexListener
+public class PlayerEmotions : ImageResultsListener
 {
     public Slider zenSlider;
     public float currentDisgust;
