@@ -2,7 +2,8 @@
 A 3D cross platform emotional stealth game based on the "Nightmares" demo and built on Unity.
 In your dreams of a dark night, you are haunted by fluffy toys who have become zombies. Use your gun and shoot them all to bits and pieces!
 
-![Paused Screenshot](PausedGame.png "Paused Screenshot")
+[![Paused Screenshot](PausedGame.png "Paused Screenshot")](https://www.youtube.com/watch?v=HjtPiXWx220 "Affectiva's Plugin for Unity Allows Games to Respond to Player Emotions")
+To download a copy of the demo [go here](https://drive.google.com/folderview?id=0B968NDUjJFMRZENRTloyNHFlRk0&usp=sharing).  
 
 ### Setup project in Unity :
 `git clone https://www.github.com/Affectiva/EmoSurvival.git` <br>
