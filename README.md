@@ -7,7 +7,7 @@ To download a copy of the demo [go here](https://drive.google.com/folderview?id=
 
 ### Setup project in Unity :
 `git clone https://www.github.com/Affectiva/EmoSurvival.git` <br>
-Open the cloned repository in unity.  File -> Open Scenes -> Level 01 .  Import the Affdex asset (to get a copy email [gaminginfo@affectiva.com](mailto:gaminginfo@affectiva.com)).
+Open the cloned repository in unity.  File -> Open Scenes -> Level 01 .  Import the Affdex asset (download it from the getting started section of the [developer portal](http://developer.affectiva.com/unity/)).
 
 > ####Controls :
 > Move  : w,a,s,d or arrow keys. <br>
